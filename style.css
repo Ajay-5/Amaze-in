@@ -1,0 +1,292 @@
+:root{
+    --green: rgb(1, 54, 1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    letter-spacing: 1px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+.menu-bar a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+}
+
+#active{
+    color: var(--green);
+    border-bottom: 2px solid var(--green);
+}
+
+.c-left a{
+    text-transform: uppercase;
+    color: var(--green);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.c-center :not(:first-child){
+    margin-left: 3rem;
+}
+
+.c-right:not(:last-child){
+    margin-right: .5rem;
+}
+
+.c-right button{
+    padding: 3px 8px;
+    font-size: 15px;
+    border: 2px solid var(--green);
+    cursor: pointer;
+}
+
+.offers{
+    background-color: #fff;
+    color: var(--green);
+}
+
+.offers:hover{
+    background-color: var(--green);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.buy-now{
+    background-color: var(--green);
+    color: #fff;
+}
+
+.buy-now:hover{
+    background-color: #fff;
+    color: var(--green);
+    border: 2px solid var(--green);
+    border-radius: 8px;
+}
+
+.heading-container{
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+}
+
+.content-left{
+    padding: 0 4rem 0 7rem;
+    text-align: center;
+}
+
+.content-left h1{
+    padding-top: 4rem;
+    font-size: 2.5rem;
+}
+
+.content-left p{
+    padding: .5rem 0;
+    font-size: 17px;
+}
+
+.content-left button{
+    padding: .5rem;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--green);
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.content-left button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: var(--green);
+    border: 2px solid var(--green);
+}
+
+.content-right img{
+    height: 350px;
+    margin: 3px 3rem 0 0;
+    border-radius: 10px;
+}
+
+.services-container{
+    margin-top: 5rem;
+}
+
+.service-heading{
+    text-align: center;
+    margin: 1rem 25rem;
+}
+
+.service-heading p{
+    padding: .5rem 0;
+}
+
+.service-contents{
+    margin: 1rem 22rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    grid-gap: 0 5px;    
+}
+
+.services{
+    background-color: #fff;
+    margin: .5rem;
+    box-shadow: 1px 1px 2px 3px rgb(207, 205, 205);
+    transition: transform .3s;
+}
+
+.services:hover{
+    transform: translate(10px);
+}
+
+.services h3{
+    padding: .5rem;
+    color: var(--green);
+}
+
+.services p{
+    padding: 0 .5rem .5rem .5rem;
+}
+
+.service-explore{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.service-explore button, .purchase button{
+    padding: .5rem;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--green);
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.service-explore button:hover, .purchase button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: var(--green);
+    border: 2px solid var(--green);
+}
+
+.purchase{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.purchase h3{
+    color: var(--green);
+    font-weight: bold;
+}
+
+.purchase p{
+    padding: .5rem;
+    font-weight: bold;
+}
+
+.purchase img{
+    height: 300px;
+    border-radius: 10px;
+}
+
+.purchase button{
+    border-radius: 8px;
+}
+
+@media only screen and (min-width:350px) and (max-width:600px){
+    .menu-bar, .menu-bar a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 1rem;
+        padding: 0;
+    }
+
+    .menu-bar a{
+        margin: .5rem;
+    }
+
+    #active{
+        border: none;
+    }
+
+    .c-center :not(:first-child){
+        margin-left: 0;
+    }
+
+    .c-right:not(:last-child){
+        margin-right: 0;
+    }
+    
+    .c-right button{
+        display: flex;
+        flex-direction: column;
+        margin: .5rem 0;
+    }
+
+    .heading-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-left{
+        padding: 0 5px;
+        margin: -5rem 0 0 0;
+    }
+
+    .content-left button{
+        margin: 1rem 0;
+    }
+
+    .content-right img{
+        width: 100%;
+        height: 50%;
+        margin: 1rem 0;
+    }
+
+    .services-container{
+        margin-top: 2rem;
+    }
+    
+    .service-heading{
+        text-align: center;
+        margin: 0;
+    }
+
+    .service-contents{
+        margin: 1rem 3rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        grid-gap: 0 5px;
+    }
+
+    .purchase{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+
+    .purchase button{
+        margin-bottom: 1rem;
+    }
+}
