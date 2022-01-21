@@ -226,6 +226,21 @@
     #active{
         border: none;
     }
+    
+    .c-center, .c-right{
+        display: none;
+        width: 100%;
+    }
+
+    .toggle-btn{
+        display: flex;
+    }
+
+    .toggle-btn i{
+        font-size: 22px;
+        font-weight: bold;
+        color: var(--green);
+    }
 
     .c-center :not(:first-child){
         margin-left: 0;
