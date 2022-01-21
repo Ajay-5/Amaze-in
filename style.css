@@ -209,7 +209,7 @@
 }
 
 @media only screen and (min-width:350px) and (max-width:600px){
-    .menu-bar, .menu-bar a{
+    /*.menu-bar, .menu-bar a{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -221,10 +221,10 @@
 
     .menu-bar a{
         margin: .5rem;
-    }
-
-    #active{
-        border: none;
+    }*/
+    
+    .menu-bar{
+         background-color: rgb(240, 240, 240);
     }
     
     .c-center, .c-right{
@@ -242,6 +242,10 @@
         color: var(--green);
     }
 
+    #active{
+        border: none;
+    }
+   
     .c-center :not(:first-child){
         margin-left: 0;
     }
